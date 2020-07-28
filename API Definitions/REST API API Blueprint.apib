@@ -1,0 +1,3466 @@
+FORMAT: 1A
+HOST: https://api.etadirect.com/rest
+
+# REST API
+
+This is a sample definition of the Oracle Field Service Cloud REST API.
+
+The views expressed here are my own and do not necessarily reflect the views of Oracle.
+
+# Group Capacity/Available Capacity
+
+## GET /ofscCapacity/v1/capacity
+
++ Request (application/json)
+
+    + Headers
+
+            Authorization: ``
+
++ Response 200 (application/json)
+
+    + Body
+
+            {
+            }
+
+# Group Capacity/Booking
+
+## GET /ofscCapacity/v1/activityBookingOptions
+
++ Request (application/json)
+
+    + Headers
+
+            Authorization: ``
+
++ Response 200 (application/json)
+
+    + Body
+
+            {
+            }
+
+# Group Capacity/Booking Closing Schedule
+
+## /ofscCapacity/v1/bookingClosingSchedule
+
+### GET
+
++ Request (application/json)
+
+    + Headers
+
+            Authorization: ``
+
++ Response 200 (application/json)
+
+    + Body
+
+            {
+            }
+
+### PATCH
+
++ Request (application/json)
+
+    + Headers
+
+            Authorization: ``
+
++ Response 200 (application/json)
+
+    + Body
+
+            {
+            }
+
+## /ofscCapacity/v1/bookingStatuses
+
+### GET
+
++ Request (application/json)
+
+    + Headers
+
+            Authorization: ``
+
++ Response 200 (application/json)
+
+    + Body
+
+            {
+            }
+
+### PATCH
+
++ Request (application/json)
+
+    + Headers
+
+            Authorization: ``
+
++ Response 200 (application/json)
+
+    + Body
+
+            {
+            }
+
+# Group Capacity/Quota
+
+## /ofscCapacity/v1/quota
+
+### GET
+
++ Request (application/json)
+
+    + Headers
+
+            Authorization: ``
+
++ Response 200 (application/json)
+
+    + Body
+
+            {
+            }
+
+### PATCH
+
++ Request (application/json)
+
+    + Headers
+
+            Authorization: ``
+
++ Response 200 (application/json)
+
+    + Body
+
+            {
+            }
+
+# Group Collaboration/Chats
+
+## POST /ofscCollaboration/v1/chats
+
++ Request (application/json)
+
+    + Headers
+
+            Authorization: ``
+
+    + Body
+
+            {
+            }
+
++ Response 204 (application/json)
+
+## POST /ofscCollaboration/v1/chats/{chatId}/leave
+
++ Parameters
+
+    + chatId
+
++ Request (application/json)
+
+    + Headers
+
+            Authorization: ``
+
+    + Body
+
+            {
+            }
+
++ Response 204 (application/json)
+
+## POST /ofscCollaboration/v1/chats/{chatId}/messages
+
++ Parameters
+
+    + chatId
+
++ Request (application/json)
+
+    + Headers
+
+            Authorization: ``
+
+    + Body
+
+            {
+            }
+
++ Response 204 (application/json)
+
+## GET /ofscCollaboration/v1/chats/{chatId}/participants
+
++ Parameters
+
+    + chatId
+
++ Request (application/json)
+
+    + Headers
+
+            Authorization: ``
+
++ Response 200 (application/json)
+
+    + Body
+
+            {
+            }
+
+## POST /ofscCollaboration/v1/chats/{chatId}/participants/invite
+
++ Parameters
+
+    + chatId
+
++ Request (application/json)
+
+    + Headers
+
+            Authorization: ``
+
+    + Body
+
+            {
+            }
+
++ Response 204 (application/json)
+
+# Group Core/Activities
+
+## POST /ofscCore/v1/activities/custom-actions/bulkUpdate
+
++ Request (application/json)
+
+    + Headers
+
+            Authorization: ``
+
+    + Body
+
+            {
+            }
+
++ Response 204 (application/json)
+
+## /ofscCore/v1/activities
+
+### GET
+
++ Request (application/json)
+
+    + Headers
+
+            Authorization: ``
+
++ Response 200 (application/json)
+
+    + Body
+
+            {
+            }
+
+### POST
+
++ Request (application/json)
+
+    + Headers
+
+            Authorization: ``
+
+    + Body
+
+            {
+            }
+
++ Response 204 (application/json)
+
+## /ofscCore/v1/activities/{activityId}
+
++ Parameters
+
+    + activityId
+
+### DELETE
+
++ Request (application/json)
+
+    + Headers
+
+            Authorization: ``
+
++ Response 204 (application/json)
+
+### GET
+
++ Request (application/json)
+
+    + Headers
+
+            Authorization: ``
+
++ Response 200 (application/json)
+
+    + Body
+
+            {
+            }
+
+### PATCH
+
++ Request (application/json)
+
+    + Headers
+
+            Authorization: ``
+
++ Response 200 (application/json)
+
+    + Body
+
+            {
+            }
+
+## GET /ofscCore/v1/activities/{activityId}/multidaySegments
+
++ Parameters
+
+    + activityId
+
++ Request (application/json)
+
+    + Headers
+
+            Authorization: ``
+
++ Response 200 (application/json)
+
+    + Body
+
+            {
+            }
+
+## GET /ofscCore/v1/activities/custom-actions/search
+
++ Request (application/json)
+
+    + Headers
+
+            Authorization: ``
+
++ Response 200 (application/json)
+
+    + Body
+
+            {
+            }
+
+## GET /ofscCore/v1/whereIsMyTech
+
++ Request (application/json)
+
+    + Headers
+
+            Authorization: ``
+
++ Response 200 (application/json)
+
+    + Body
+
+            {
+            }
+
+# Group Core/Activities/Activity Actions
+
+## POST /ofscCore/v1/activities/{activityId}/custom-actions/cancel
+
++ Parameters
+
+    + activityId
+
++ Request (application/json)
+
+    + Headers
+
+            Authorization: ``
+
+    + Body
+
+            {
+            }
+
++ Response 204 (application/json)
+
+## POST /ofscCore/v1/activities/{activityId}/custom-actions/complete
+
++ Parameters
+
+    + activityId
+
++ Request (application/json)
+
+    + Headers
+
+            Authorization: ``
+
+    + Body
+
+            {
+            }
+
++ Response 204 (application/json)
+
+## POST /ofscCore/v1/activities/{activityId}/custom-actions/delay
+
++ Parameters
+
+    + activityId
+
++ Request (application/json)
+
+    + Headers
+
+            Authorization: ``
+
+    + Body
+
+            {
+            }
+
++ Response 204 (application/json)
+
+## POST /ofscCore/v1/activities/{activityId}/custom-actions/move
+
++ Parameters
+
+    + activityId
+
++ Request (application/json)
+
+    + Headers
+
+            Authorization: ``
+
+    + Body
+
+            {
+            }
+
++ Response 204 (application/json)
+
+## POST /ofscCore/v1/activities/{activityId}/custom-actions/reopen
+
++ Parameters
+
+    + activityId
+
++ Request (application/json)
+
+    + Headers
+
+            Authorization: ``
+
+    + Body
+
+            {
+            }
+
++ Response 204 (application/json)
+
+## POST /ofscCore/v1/activities/{activityId}/custom-actions/start
+
++ Parameters
+
+    + activityId
+
++ Request (application/json)
+
+    + Headers
+
+            Authorization: ``
+
+    + Body
+
+            {
+            }
+
++ Response 204 (application/json)
+
+## POST /ofscCore/v1/activities/{activityId}/custom-actions/startPrework
+
++ Parameters
+
+    + activityId
+
++ Request (application/json)
+
+    + Headers
+
+            Authorization: ``
+
+    + Body
+
+            {
+            }
+
++ Response 204 (application/json)
+
+## POST /ofscCore/v1/activities/{activityId}/custom-actions/suspend
+
++ Parameters
+
+    + activityId
+
++ Request (application/json)
+
+    + Headers
+
+            Authorization: ``
+
+    + Body
+
+            {
+            }
+
++ Response 204 (application/json)
+
+## POST /ofscCore/v1/activities/{activityId}/custom-actions/notDone
+
++ Parameters
+
+    + activityId
+
++ Request (application/json)
+
+    + Headers
+
+            Authorization: ``
+
+    + Body
+
+            {
+            }
+
++ Response 204 (application/json)
+
+# Group Core/Activities/Activity File Properties
+
+## /ofscCore/v1/activities/{activityId}/{propertyLabel}
+
++ Parameters
+
+    + activityId
+
+    + propertyLabel
+
+### DELETE
+
++ Request (application/json)
+
+    + Headers
+
+            Authorization: ``
+
++ Response 204 (application/json)
+
+### GET
+
++ Request (application/json)
+
+    + Headers
+
+            Authorization: ``
+
++ Response 200 (application/json)
+
+    + Body
+
+            {
+            }
+
+### PUT
+
++ Request (application/json)
+
+    + Headers
+
+            Authorization: ``
+
++ Response 204 (application/json)
+
+# Group Core/Activities/Activity Inventories
+
+## /ofscCore/v1/activities/{activityId}/customerInventories
+
++ Parameters
+
+    + activityId
+
+### GET
+
++ Request (application/json)
+
+    + Headers
+
+            Authorization: ``
+
++ Response 200 (application/json)
+
+    + Body
+
+            {
+            }
+
+### POST
+
++ Request (application/json)
+
+    + Headers
+
+            Authorization: ``
+
+    + Body
+
+            {
+            }
+
++ Response 204 (application/json)
+
+## GET /ofscCore/v1/activities/{activityId}/deinstalledInventories
+
++ Parameters
+
+    + activityId
+
++ Request (application/json)
+
+    + Headers
+
+            Authorization: ``
+
++ Response 200 (application/json)
+
+    + Body
+
+            {
+            }
+
+## GET /ofscCore/v1/activities/{activityId}/installedInventories
+
++ Parameters
+
+    + activityId
+
++ Request (application/json)
+
+    + Headers
+
+            Authorization: ``
+
++ Response 200 (application/json)
+
+    + Body
+
+            {
+            }
+
+# Group Core/Activities/Activity Links
+
+## /ofscCore/v1/activities/{activityId}/linkedActivities
+
++ Parameters
+
+    + activityId
+
+### DELETE
+
++ Request (application/json)
+
+    + Headers
+
+            Authorization: ``
+
++ Response 204 (application/json)
+
+### GET
+
++ Request (application/json)
+
+    + Headers
+
+            Authorization: ``
+
++ Response 200 (application/json)
+
+    + Body
+
+            {
+            }
+
+### POST
+
++ Request (application/json)
+
+    + Headers
+
+            Authorization: ``
+
+    + Body
+
+            {
+            }
+
++ Response 204 (application/json)
+
+## /ofscCore/v1/activities/{activityId}/linkedActivities/{linkedActivityId}/linkTypes/{linkType}
+
++ Parameters
+
+    + activityId
+
+    + linkedActivityId
+
+    + linkType
+
+### DELETE
+
++ Request (application/json)
+
+    + Headers
+
+            Authorization: ``
+
++ Response 204 (application/json)
+
+### GET
+
++ Request (application/json)
+
+    + Headers
+
+            Authorization: ``
+
++ Response 200 (application/json)
+
+    + Body
+
+            {
+            }
+
+### PUT
+
++ Request (application/json)
+
+    + Headers
+
+            Authorization: ``
+
++ Response 204 (application/json)
+
+# Group Core/Activities/Activity Required Inventories
+
+## /ofscCore/v1/activities/{activityId}/requiredInventories
+
++ Parameters
+
+    + activityId
+
+### DELETE
+
++ Request (application/json)
+
+    + Headers
+
+            Authorization: ``
+
++ Response 204 (application/json)
+
+### GET
+
++ Request (application/json)
+
+    + Headers
+
+            Authorization: ``
+
++ Response 200 (application/json)
+
+    + Body
+
+            {
+            }
+
+### PUT
+
++ Request (application/json)
+
+    + Headers
+
+            Authorization: ``
+
++ Response 204 (application/json)
+
+# Group Core/Activities/Activity Resource Preferences
+
+## /ofscCore/v1/activities/{activityId}/resourcePreferences
+
++ Parameters
+
+    + activityId
+
+### DELETE
+
++ Request (application/json)
+
+    + Headers
+
+            Authorization: ``
+
++ Response 204 (application/json)
+
+### GET
+
++ Request (application/json)
+
+    + Headers
+
+            Authorization: ``
+
++ Response 200 (application/json)
+
+    + Body
+
+            {
+            }
+
+### PUT
+
++ Request (application/json)
+
+    + Headers
+
+            Authorization: ``
+
++ Response 204 (application/json)
+
+# Group Core/Daily Extracts
+
+## GET /ofscCore/v1/folders/dailyExtract/folders
+
++ Request (application/json)
+
+    + Headers
+
+            Authorization: ``
+
++ Response 200 (application/json)
+
+    + Body
+
+            {
+            }
+
+## GET /ofscCore/v1/folders/dailyExtract/folders/{dailyExtractDate}/files
+
++ Parameters
+
+    + dailyExtractDate
+
++ Request (application/json)
+
+    + Headers
+
+            Authorization: ``
+
++ Response 200 (application/json)
+
+    + Body
+
+            {
+            }
+
+## GET /ofscCore/v1/folders/dailyExtract/folders/{dailyExtractDate}/files/{dailyExtractFilename}
+
++ Parameters
+
+    + dailyExtractDate
+
+    + dailyExtractFilename
+
++ Request (application/json)
+
+    + Headers
+
+            Authorization: ``
+
++ Response 200 (application/json)
+
+    + Body
+
+            {
+            }
+
+# Group Core/Events
+
+## GET /ofscCore/v1/events
+
++ Request (application/json)
+
+    + Headers
+
+            Authorization: ``
+
++ Response 200 (application/json)
+
+    + Body
+
+            {
+            }
+
+## /ofscCore/v1/events/subscriptions
+
+### GET
+
++ Request (application/json)
+
+    + Headers
+
+            Authorization: ``
+
++ Response 200 (application/json)
+
+    + Body
+
+            {
+            }
+
+### POST
+
++ Request (application/json)
+
+    + Headers
+
+            Authorization: ``
+
+    + Body
+
+            {
+            }
+
++ Response 204 (application/json)
+
+## /ofscCore/v1/events/subscriptions/{subscriptionId}
+
++ Parameters
+
+    + subscriptionId
+
+### DELETE
+
++ Request (application/json)
+
+    + Headers
+
+            Authorization: ``
+
++ Response 204 (application/json)
+
+### GET
+
++ Request (application/json)
+
+    + Headers
+
+            Authorization: ``
+
++ Response 200 (application/json)
+
+    + Body
+
+            {
+            }
+
+# Group Core/Inventories
+
+## POST /ofscCore/v1/inventories
+
++ Request (application/json)
+
+    + Headers
+
+            Authorization: ``
+
+    + Body
+
+            {
+            }
+
++ Response 204 (application/json)
+
+## /ofscCore/v1/inventories/{inventoryId}
+
++ Parameters
+
+    + inventoryId
+
+### DELETE
+
++ Request (application/json)
+
+    + Headers
+
+            Authorization: ``
+
++ Response 204 (application/json)
+
+### GET
+
++ Request (application/json)
+
+    + Headers
+
+            Authorization: ``
+
++ Response 200 (application/json)
+
+    + Body
+
+            {
+            }
+
+### PATCH
+
++ Request (application/json)
+
+    + Headers
+
+            Authorization: ``
+
++ Response 200 (application/json)
+
+    + Body
+
+            {
+            }
+
+## /ofscCore/v1/inventories/{inventoryId}/{propertyLabel}
+
++ Parameters
+
+    + inventoryId
+
+    + propertyLabel
+
+### DELETE
+
++ Request (application/json)
+
+    + Headers
+
+            Authorization: ``
+
++ Response 204 (application/json)
+
+### GET
+
++ Request (application/json)
+
+    + Headers
+
+            Authorization: ``
+
++ Response 200 (application/json)
+
+    + Body
+
+            {
+            }
+
+### PUT
+
++ Request (application/json)
+
+    + Headers
+
+            Authorization: ``
+
++ Response 204 (application/json)
+
+## POST /ofscCore/v1/inventories/{inventoryId}/custom-actions/deinstall
+
++ Parameters
+
+    + inventoryId
+
++ Request (application/json)
+
+    + Headers
+
+            Authorization: ``
+
+    + Body
+
+            {
+            }
+
++ Response 204 (application/json)
+
+## POST /ofscCore/v1/inventories/{inventoryId}/custom-actions/install
+
++ Parameters
+
+    + inventoryId
+
++ Request (application/json)
+
+    + Headers
+
+            Authorization: ``
+
+    + Body
+
+            {
+            }
+
++ Response 204 (application/json)
+
+## POST /ofscCore/v1/inventories/{inventoryId}/custom-actions/undoDeinstall
+
++ Parameters
+
+    + inventoryId
+
++ Request (application/json)
+
+    + Headers
+
+            Authorization: ``
+
+    + Body
+
+            {
+            }
+
++ Response 204 (application/json)
+
+## POST /ofscCore/v1/inventories/{inventoryId}/custom-actions/undoInstall
+
++ Parameters
+
+    + inventoryId
+
++ Request (application/json)
+
+    + Headers
+
+            Authorization: ``
+
+    + Body
+
+            {
+            }
+
++ Response 204 (application/json)
+
+# Group Core/Resources
+
+## GET /ofscCore/v1/resources
+
++ Request (application/json)
+
+    + Headers
+
+            Authorization: ``
+
++ Response 200 (application/json)
+
+    + Body
+
+            {
+            }
+
+## /ofscCore/v1/resources/{resourceId}
+
++ Parameters
+
+    + resourceId
+
+### GET
+
++ Request (application/json)
+
+    + Headers
+
+            Authorization: ``
+
++ Response 200 (application/json)
+
+    + Body
+
+            {
+            }
+
+### PATCH
+
++ Request (application/json)
+
+    + Headers
+
+            Authorization: ``
+
++ Response 200 (application/json)
+
+    + Body
+
+            {
+            }
+
+### PUT
+
++ Request (application/json)
+
+    + Headers
+
+            Authorization: ``
+
++ Response 204 (application/json)
+
+## GET /ofscCore/v1/resources/{resourceId}/children
+
++ Parameters
+
+    + resourceId
+
++ Request (application/json)
+
+    + Headers
+
+            Authorization: ``
+
++ Response 200 (application/json)
+
+    + Body
+
+            {
+            }
+
+## GET /ofscCore/v1/resources/{resourceId}/descendants
+
++ Parameters
+
+    + resourceId
+
++ Request (application/json)
+
+    + Headers
+
+            Authorization: ``
+
++ Response 200 (application/json)
+
+    + Body
+
+            {
+            }
+
+## GET /ofscCore/v1/resources/{resourceId}/findNearbyActivities
+
++ Parameters
+
+    + resourceId
+
++ Request (application/json)
+
+    + Headers
+
+            Authorization: ``
+
++ Response 200 (application/json)
+
+    + Body
+
+            {
+            }
+
+## /ofscCore/v1/resources/{resourceId}/inventories
+
++ Parameters
+
+    + resourceId
+
+### GET
+
++ Request (application/json)
+
+    + Headers
+
+            Authorization: ``
+
++ Response 200 (application/json)
+
+    + Body
+
+            {
+            }
+
+### POST
+
++ Request (application/json)
+
+    + Headers
+
+            Authorization: ``
+
+    + Body
+
+            {
+            }
+
++ Response 204 (application/json)
+
+## POST /ofscCore/v1/resources/{resourceId}/inventories/{inventoryId}/custom-actions/install
+
++ Parameters
+
+    + resourceId
+
+    + inventoryId
+
++ Request (application/json)
+
+    + Headers
+
+            Authorization: ``
+
+    + Body
+
+            {
+            }
+
++ Response 204 (application/json)
+
+## POST /ofscCore/v1/resources/custom-actions/bulkUpdateInventories
+
++ Request (application/json)
+
+    + Headers
+
+            Authorization: ``
+
+    + Body
+
+            {
+            }
+
++ Response 204 (application/json)
+
+## POST /ofscCore/v1/resources/custom-actions/bulkUpdateWorkSchedules
+
++ Request (application/json)
+
+    + Headers
+
+            Authorization: ``
+
+    + Body
+
+            {
+            }
+
++ Response 204 (application/json)
+
+## POST /ofscCore/v1/resources/custom-actions/bulkUpdateWorkSkills
+
++ Request (application/json)
+
+    + Headers
+
+            Authorization: ``
+
+    + Body
+
+            {
+            }
+
++ Response 204 (application/json)
+
+## POST /ofscCore/v1/resources/custom-actions/bulkUpdateWorkZones
+
++ Request (application/json)
+
+    + Headers
+
+            Authorization: ``
+
+    + Body
+
+            {
+            }
+
++ Response 204 (application/json)
+
+## POST /ofscCore/v1/resources/custom-actions/findMatchingResources
+
++ Request (application/json)
+
+    + Headers
+
+            Authorization: ``
+
+    + Body
+
+            {
+            }
+
++ Response 204 (application/json)
+
+## POST /ofscCore/v1/resources/custom-actions/findResourcesForUrgentAssignment
+
++ Request (application/json)
+
+    + Headers
+
+            Authorization: ``
+
+    + Body
+
+            {
+            }
+
++ Response 204 (application/json)
+
+# Group Core/Resources/Resource Assigned Users
+
+## /ofscCore/v1/resources/{resourceId}/{propertyLabel}
+
++ Parameters
+
+    + resourceId
+
+    + propertyLabel
+
+### DELETE
+
++ Request (application/json)
+
+    + Headers
+
+            Authorization: ``
+
++ Response 204 (application/json)
+
+### GET
+
++ Request (application/json)
+
+    + Headers
+
+            Authorization: ``
+
++ Response 200 (application/json)
+
+    + Body
+
+            {
+            }
+
+### PUT
+
++ Request (application/json)
+
+    + Headers
+
+            Authorization: ``
+
++ Response 204 (application/json)
+
+## /ofscCore/v1/resources/{resourceId}/users
+
++ Parameters
+
+    + resourceId
+
+### DELETE
+
++ Request (application/json)
+
+    + Headers
+
+            Authorization: ``
+
++ Response 204 (application/json)
+
+### GET
+
++ Request (application/json)
+
+    + Headers
+
+            Authorization: ``
+
++ Response 200 (application/json)
+
+    + Body
+
+            {
+            }
+
+### PUT
+
++ Request (application/json)
+
+    + Headers
+
+            Authorization: ``
+
++ Response 204 (application/json)
+
+# Group Core/Resources/Resource Locations
+
+## /ofscCore/v1/resources/{resourceId}/locations
+
++ Parameters
+
+    + resourceId
+
+### GET
+
++ Request (application/json)
+
+    + Headers
+
+            Authorization: ``
+
++ Response 200 (application/json)
+
+    + Body
+
+            {
+            }
+
+### POST
+
++ Request (application/json)
+
+    + Headers
+
+            Authorization: ``
+
+    + Body
+
+            {
+            }
+
++ Response 204 (application/json)
+
+## /ofscCore/v1/resources/{resourceId}/locations/{locationId}
+
++ Parameters
+
+    + resourceId
+
+    + locationId
+
+### DELETE
+
++ Request (application/json)
+
+    + Headers
+
+            Authorization: ``
+
++ Response 204 (application/json)
+
+### GET
+
++ Request (application/json)
+
+    + Headers
+
+            Authorization: ``
+
++ Response 200 (application/json)
+
+    + Body
+
+            {
+            }
+
+### PATCH
+
++ Request (application/json)
+
+    + Headers
+
+            Authorization: ``
+
++ Response 200 (application/json)
+
+    + Body
+
+            {
+            }
+
+## /ofscCore/v1/resources/{resourceId}/assignedLocations
+
++ Parameters
+
+    + resourceId
+
+### GET
+
++ Request (application/json)
+
+    + Headers
+
+            Authorization: ``
+
++ Response 200 (application/json)
+
+    + Body
+
+            {
+            }
+
+### PATCH
+
++ Request (application/json)
+
+    + Headers
+
+            Authorization: ``
+
++ Response 200 (application/json)
+
+    + Body
+
+            {
+            }
+
+### PUT
+
++ Request (application/json)
+
+    + Headers
+
+            Authorization: ``
+
++ Response 204 (application/json)
+
+## DELETE /ofscCore/v1/resources/{resourceId}/assignedLocations/{date}
+
++ Parameters
+
+    + resourceId
+
+    + date
+
++ Request (application/json)
+
+    + Headers
+
+            Authorization: ``
+
++ Response 204 (application/json)
+
+# Group Core/Resources/Resource Positions
+
+## GET /ofscCore/v1/resources/{resourceId}/positionHistory
+
++ Parameters
+
+    + resourceId
+
++ Request (application/json)
+
+    + Headers
+
+            Authorization: ``
+
++ Response 200 (application/json)
+
+    + Body
+
+            {
+            }
+
+## GET /ofscCore/v1/resources/{resourceId}/routes/{date}
+
++ Parameters
+
+    + resourceId
+
+    + date
+
++ Request (application/json)
+
+    + Headers
+
+            Authorization: ``
+
++ Response 200 (application/json)
+
+    + Body
+
+            {
+            }
+
+## POST /ofscCore/v1/resources/{resourceId}/routes/{date}/custom-actions/activate
+
++ Parameters
+
+    + resourceId
+
+    + date
+
++ Request (application/json)
+
+    + Headers
+
+            Authorization: ``
+
+    + Body
+
+            {
+            }
+
++ Response 204 (application/json)
+
+## POST /ofscCore/v1/resources/{resourceId}/routes/{date}/custom-actions/deactivate
+
++ Parameters
+
+    + resourceId
+
+    + date
+
++ Request (application/json)
+
+    + Headers
+
+            Authorization: ``
+
+    + Body
+
+            {
+            }
+
++ Response 204 (application/json)
+
+## GET /ofscCore/v1/resources/custom-actions/lastKnownPositions
+
++ Request (application/json)
+
+    + Headers
+
+            Authorization: ``
+
++ Response 200 (application/json)
+
+    + Body
+
+            {
+            }
+
+## GET /ofscCore/v1/resources/custom-actions/resourcesInArea
+
++ Request (application/json)
+
+    + Headers
+
+            Authorization: ``
+
++ Response 200 (application/json)
+
+    + Body
+
+            {
+            }
+
+## POST /ofscCore/v1/resources/custom-actions/setPositions
+
++ Request (application/json)
+
+    + Headers
+
+            Authorization: ``
+
+    + Body
+
+            {
+            }
+
++ Response 204 (application/json)
+
+# Group Core/Resources/Resource Work Plans
+
+## /ofscCore/v1/resources/{resourceId}/plans
+
++ Parameters
+
+    + resourceId
+
+### DELETE
+
++ Request (application/json)
+
+    + Headers
+
+            Authorization: ``
+
++ Response 204 (application/json)
+
+### GET
+
++ Request (application/json)
+
+    + Headers
+
+            Authorization: ``
+
++ Response 200 (application/json)
+
+    + Body
+
+            {
+            }
+
+### POST
+
++ Request (application/json)
+
+    + Headers
+
+            Authorization: ``
+
+    + Body
+
+            {
+            }
+
++ Response 204 (application/json)
+
+# Group Core/Resources/Resource Work Schedules
+
+## GET /ofscCore/v1/calendars
+
++ Request (application/json)
+
+    + Headers
+
+            Authorization: ``
+
++ Response 200 (application/json)
+
+    + Body
+
+            {
+            }
+
+## /ofscCore/v1/resources/{resourceId}/workSchedules
+
++ Parameters
+
+    + resourceId
+
+### GET
+
++ Request (application/json)
+
+    + Headers
+
+            Authorization: ``
+
++ Response 200 (application/json)
+
+    + Body
+
+            {
+            }
+
+### POST
+
++ Request (application/json)
+
+    + Headers
+
+            Authorization: ``
+
+    + Body
+
+            {
+            }
+
++ Response 204 (application/json)
+
+## DELETE /ofscCore/v1/resources/{resourceId}/workSchedules/{scheduleItemId}
+
++ Parameters
+
+    + resourceId
+
+    + scheduleItemId
+
++ Request (application/json)
+
+    + Headers
+
+            Authorization: ``
+
++ Response 204 (application/json)
+
+## GET /ofscCore/v1/resources/{resourceId}/workSchedules/calendarView
+
++ Parameters
+
+    + resourceId
+
++ Request (application/json)
+
+    + Headers
+
+            Authorization: ``
+
++ Response 200 (application/json)
+
+    + Body
+
+            {
+            }
+
+# Group Core/Resources/Resource Work Skills
+
+## /ofscCore/v1/resources/{resourceId}/workSkills
+
++ Parameters
+
+    + resourceId
+
+### GET
+
++ Request (application/json)
+
+    + Headers
+
+            Authorization: ``
+
++ Response 200 (application/json)
+
+    + Body
+
+            {
+            }
+
+### POST
+
++ Request (application/json)
+
+    + Headers
+
+            Authorization: ``
+
+    + Body
+
+            {
+            }
+
++ Response 204 (application/json)
+
+## DELETE /ofscCore/v1/resources/{resourceId}/workSkills/{workSkill}
+
++ Parameters
+
+    + resourceId
+
+    + workSkill
+
++ Request (application/json)
+
+    + Headers
+
+            Authorization: ``
+
++ Response 204 (application/json)
+
+# Group Core/Resources/Resource Work Zones
+
+## /ofscCore/v1/resources/{resourceId}/workZones
+
++ Parameters
+
+    + resourceId
+
+### GET
+
++ Request (application/json)
+
+    + Headers
+
+            Authorization: ``
+
++ Response 200 (application/json)
+
+    + Body
+
+            {
+            }
+
+### POST
+
++ Request (application/json)
+
+    + Headers
+
+            Authorization: ``
+
+    + Body
+
+            {
+            }
+
++ Response 204 (application/json)
+
+## DELETE /ofscCore/v1/resources/{resourceId}/workZones/{workZoneItemId}
+
++ Parameters
+
+    + resourceId
+
+    + workZoneItemId
+
++ Request (application/json)
+
+    + Headers
+
+            Authorization: ``
+
++ Response 204 (application/json)
+
+# Group Core/Service Requests
+
+## POST /ofscCore/v1/serviceRequests
+
++ Request (application/json)
+
+    + Headers
+
+            Authorization: ``
+
+    + Body
+
+            {
+            }
+
++ Response 204 (application/json)
+
+## GET /ofscCore/v1/serviceRequests/{requestId}
+
++ Parameters
+
+    + requestId
+
++ Request (application/json)
+
+    + Headers
+
+            Authorization: ``
+
++ Response 200 (application/json)
+
+    + Body
+
+            {
+            }
+
+# Group Core/Users
+
+## GET /ofscCore/v1/users
+
++ Request (application/json)
+
+    + Headers
+
+            Authorization: ``
+
++ Response 200 (application/json)
+
+    + Body
+
+            {
+            }
+
+## /ofscCore/v1/users/{login}
+
++ Parameters
+
+    + login
+
+### DELETE
+
++ Request (application/json)
+
+    + Headers
+
+            Authorization: ``
+
++ Response 204 (application/json)
+
+### GET
+
++ Request (application/json)
+
+    + Headers
+
+            Authorization: ``
+
++ Response 200 (application/json)
+
+    + Body
+
+            {
+            }
+
+### PATCH
+
++ Request (application/json)
+
+    + Headers
+
+            Authorization: ``
+
++ Response 200 (application/json)
+
+    + Body
+
+            {
+            }
+
+### PUT
+
++ Request (application/json)
+
+    + Headers
+
+            Authorization: ``
+
++ Response 204 (application/json)
+
+# Group Core/Users/User Collaboration Groups
+
+## /ofscCore/v1/users/{login}/collaborationGroups
+
++ Parameters
+
+    + login
+
+### DELETE
+
++ Request (application/json)
+
+    + Headers
+
+            Authorization: ``
+
++ Response 204 (application/json)
+
+### GET
+
++ Request (application/json)
+
+    + Headers
+
+            Authorization: ``
+
++ Response 200 (application/json)
+
+    + Body
+
+            {
+            }
+
+### POST
+
++ Request (application/json)
+
+    + Headers
+
+            Authorization: ``
+
+    + Body
+
+            {
+            }
+
++ Response 204 (application/json)
+
+# Group Core/Users/User File Properties
+
+## /ofscCore/v1/users/{login}/{propertyLabel}
+
++ Parameters
+
+    + login
+
+    + propertyLabel
+
+### DELETE
+
++ Request (application/json)
+
+    + Headers
+
+            Authorization: ``
+
++ Response 204 (application/json)
+
+### GET
+
++ Request (application/json)
+
+    + Headers
+
+            Authorization: ``
+
++ Response 200 (application/json)
+
+    + Body
+
+            {
+            }
+
+### PUT
+
++ Request (application/json)
+
+    + Headers
+
+            Authorization: ``
+
++ Response 204 (application/json)
+
+# Group Metadata/Activity Type Groups
+
+## GET /ofscMetadata/v1/activityTypeGroups
+
++ Request (application/json)
+
+    + Headers
+
+            Authorization: ``
+
++ Response 200 (application/json)
+
+    + Body
+
+            {
+            }
+
+## /ofscMetadata/v1/activityTypeGroups/{label}
+
++ Parameters
+
+    + label
+
+### GET
+
++ Request (application/json)
+
+    + Headers
+
+            Authorization: ``
+
++ Response 200 (application/json)
+
+    + Body
+
+            {
+            }
+
+### PUT
+
++ Request (application/json)
+
+    + Headers
+
+            Authorization: ``
+
++ Response 204 (application/json)
+
+# Group Metadata/Activity Types
+
+## GET /ofscMetadata/v1/activityTypes
+
++ Request (application/json)
+
+    + Headers
+
+            Authorization: ``
+
++ Response 200 (application/json)
+
+    + Body
+
+            {
+            }
+
+## /ofscMetadata/v1/activityTypes/{label}
+
++ Parameters
+
+    + label
+
+### GET
+
++ Request (application/json)
+
+    + Headers
+
+            Authorization: ``
+
++ Response 200 (application/json)
+
+    + Body
+
+            {
+            }
+
+### PUT
+
++ Request (application/json)
+
+    + Headers
+
+            Authorization: ``
+
++ Response 204 (application/json)
+
+# Group Metadata/Applications
+
+## GET /ofscMetadata/v1/applications
+
++ Request (application/json)
+
+    + Headers
+
+            Authorization: ``
+
++ Response 200 (application/json)
+
+    + Body
+
+            {
+            }
+
+## /ofscMetadata/v1/applications/{label}
+
++ Parameters
+
+    + label
+
+### GET
+
++ Request (application/json)
+
+    + Headers
+
+            Authorization: ``
+
++ Response 200 (application/json)
+
+    + Body
+
+            {
+            }
+
+### PUT
+
++ Request (application/json)
+
+    + Headers
+
+            Authorization: ``
+
++ Response 204 (application/json)
+
+## GET /ofscMetadata/v1/applications/{label}/apiAccess
+
++ Request (application/json)
+
+    + Headers
+
+            Authorization: ``
+
++ Response 200 (application/json)
+
+    + Body
+
+            {
+            }
+
+## /ofscMetadata/v1/applications/{label}/apiAccess/{apiLabel}
+
++ Parameters
+
+    + apiLabel
+
+### GET
+
++ Request (application/json)
+
+    + Headers
+
+            Authorization: ``
+
++ Response 200 (application/json)
+
+    + Body
+
+            {
+            }
+
+### PATCH
+
++ Request (application/json)
+
+    + Headers
+
+            Authorization: ``
+
++ Response 200 (application/json)
+
+    + Body
+
+            {
+            }
+
+# Group Metadata/Capacity Areas
+
+## GET /ofscMetadata/v1/capacityAreas
+
++ Request (application/json)
+
+    + Headers
+
+            Authorization: ``
+
++ Response 200 (application/json)
+
+    + Body
+
+            {
+            }
+
+## GET /ofscMetadata/v1/capacityAreas/{label}
+
++ Parameters
+
+    + label
+
++ Request (application/json)
+
+    + Headers
+
+            Authorization: ``
+
++ Response 200 (application/json)
+
+    + Body
+
+            {
+            }
+
+# Group Metadata/Capacity Areas/Capacity Categories
+
+## GET /ofscMetadata/v1/capacityAreas/{label}/capacityCategories
+
++ Parameters
+
+    + label
+
++ Request (application/json)
+
+    + Headers
+
+            Authorization: ``
+
++ Response 200 (application/json)
+
+    + Body
+
+            {
+            }
+
+# Group Metadata/Capacity Areas/Organizations
+
+## GET /ofscMetadata/v1/capacityAreas/{label}/organizations
+
++ Parameters
+
+    + label
+
++ Request (application/json)
+
+    + Headers
+
+            Authorization: ``
+
++ Response 200 (application/json)
+
+    + Body
+
+            {
+            }
+
+# Group Metadata/Capacity Areas/Time Intervals
+
+## GET /ofscMetadata/v1/capacityAreas/{label}/children
+
++ Parameters
+
+    + label
+
++ Request (application/json)
+
+    + Headers
+
+            Authorization: ``
+
++ Response 200 (application/json)
+
+    + Body
+
+            {
+            }
+
+## GET /ofscMetadata/v1/capacityAreas/{label}/timeIntervals
+
++ Parameters
+
+    + label
+
++ Request (application/json)
+
+    + Headers
+
+            Authorization: ``
+
++ Response 200 (application/json)
+
+    + Body
+
+            {
+            }
+
+# Group Metadata/Capacity Areas/Time Slots
+
+## GET /ofscMetadata/v1/capacityAreas/{label}/timeSlots
+
++ Parameters
+
+    + label
+
++ Request (application/json)
+
+    + Headers
+
+            Authorization: ``
+
++ Response 200 (application/json)
+
+    + Body
+
+            {
+            }
+
+# Group Metadata/Capacity Areas/Work Zones
+
+## GET /ofscMetadata/v1/capacityAreas/{label}/workZones
+
++ Parameters
+
+    + label
+
++ Request (application/json)
+
+    + Headers
+
+            Authorization: ``
+
++ Response 200 (application/json)
+
+    + Body
+
+            {
+            }
+
+# Group Metadata/Capacity Categories
+
+## GET /ofscMetadata/v1/capacityCategories
+
++ Request (application/json)
+
+    + Headers
+
+            Authorization: ``
+
++ Response 200 (application/json)
+
+    + Body
+
+            {
+            }
+
+## /ofscMetadata/v1/capacityCategories/{label}
+
++ Parameters
+
+    + label
+
+### DELETE
+
++ Request (application/json)
+
+    + Headers
+
+            Authorization: ``
+
++ Response 204 (application/json)
+
+### GET
+
++ Request (application/json)
+
+    + Headers
+
+            Authorization: ``
+
++ Response 200 (application/json)
+
+    + Body
+
+            {
+            }
+
+### PUT
+
++ Request (application/json)
+
+    + Headers
+
+            Authorization: ``
+
++ Response 204 (application/json)
+
+# Group Metadata/Forms
+
+## GET /ofscMetadata/v1/forms
+
++ Request (application/json)
+
+    + Headers
+
+            Authorization: ``
+
++ Response 200 (application/json)
+
+    + Body
+
+            {
+            }
+
+## /ofscMetadata/v1/forms/{label}
+
++ Parameters
+
+    + label
+
+### DELETE
+
++ Request (application/json)
+
+    + Headers
+
+            Authorization: ``
+
++ Response 204 (application/json)
+
+### GET
+
++ Request (application/json)
+
+    + Headers
+
+            Authorization: ``
+
++ Response 200 (application/json)
+
+    + Body
+
+            {
+            }
+
+### PUT
+
++ Request (application/json)
+
+    + Headers
+
+            Authorization: ``
+
++ Response 204 (application/json)
+
+# Group Metadata/Inventory Types
+
+## GET /ofscMetadata/v1/inventoryTypes
+
++ Request (application/json)
+
+    + Headers
+
+            Authorization: ``
+
++ Response 200 (application/json)
+
+    + Body
+
+            {
+            }
+
+# Group Metadata/Languages
+
+## GET /ofscMetadata/v1/languages
+
++ Request (application/json)
+
+    + Headers
+
+            Authorization: ``
+
++ Response 200 (application/json)
+
+    + Body
+
+            {
+            }
+
+## /ofscMetadata/v1/mapLayers
+
+### GET
+
++ Request (application/json)
+
+    + Headers
+
+            Authorization: ``
+
++ Response 200 (application/json)
+
+    + Body
+
+            {
+            }
+
+### POST
+
++ Request (application/json)
+
+    + Headers
+
+            Authorization: ``
+
+    + Body
+
+            {
+            }
+
++ Response 204 (application/json)
+
+## /ofscMetadata/v1/mapLayers/{label}
+
++ Parameters
+
+    + label
+
+### GET
+
++ Request (application/json)
+
+    + Headers
+
+            Authorization: ``
+
++ Response 200 (application/json)
+
+    + Body
+
+            {
+            }
+
+### PUT
+
++ Request (application/json)
+
+    + Headers
+
+            Authorization: ``
+
++ Response 204 (application/json)
+
+## POST /ofscMetadata/v1/mapLayers/custom-actions/populateLayers
+
++ Request (application/json)
+
+    + Headers
+
+            Authorization: ``
+
+    + Body
+
+            {
+            }
+
++ Response 204 (application/json)
+
+## GET /ofscMetadata/v1/mapLayers/custom-actions/populateLayers/{downloadId}
+
++ Parameters
+
+    + downloadId
+
++ Request (application/json)
+
+    + Headers
+
+            Authorization: ``
+
++ Response 200 (application/json)
+
+    + Body
+
+            {
+            }
+
+# Group Metadata/Non-working Reasons
+
+## GET /ofscMetadata/v1/nonWorkingReasons
+
++ Request (application/json)
+
+    + Headers
+
+            Authorization: ``
+
++ Response 200 (application/json)
+
+    + Body
+
+            {
+            }
+
+# Group Metadata/Organizations
+
+## GET /ofscMetadata/v1/organizations
+
++ Request (application/json)
+
+    + Headers
+
+            Authorization: ``
+
++ Response 200 (application/json)
+
+    + Body
+
+            {
+            }
+
+## GET /ofscMetadata/v1/organizations/{label}
+
++ Parameters
+
+    + label
+
++ Request (application/json)
+
+    + Headers
+
+            Authorization: ``
+
++ Response 200 (application/json)
+
+    + Body
+
+            {
+            }
+
+# Group Metadata/Properties
+
+## GET /ofscMetadata/v1/properties
+
++ Request (application/json)
+
+    + Headers
+
+            Authorization: ``
+
++ Response 200 (application/json)
+
+    + Body
+
+            {
+            }
+
+## /ofscMetadata/v1/properties/{label}
+
++ Parameters
+
+    + label
+
+### GET
+
++ Request (application/json)
+
+    + Headers
+
+            Authorization: ``
+
++ Response 200 (application/json)
+
+    + Body
+
+            {
+            }
+
+### PATCH
+
++ Request (application/json)
+
+    + Headers
+
+            Authorization: ``
+
++ Response 200 (application/json)
+
+    + Body
+
+            {
+            }
+
+### PUT
+
++ Request (application/json)
+
+    + Headers
+
+            Authorization: ``
+
++ Response 204 (application/json)
+
+## /ofscMetadata/v1/properties/{label}/enumerationList
+
++ Parameters
+
+    + label
+
+### GET
+
++ Request (application/json)
+
+    + Headers
+
+            Authorization: ``
+
++ Response 200 (application/json)
+
+    + Body
+
+            {
+            }
+
+### PUT
+
++ Request (application/json)
+
+    + Headers
+
+            Authorization: ``
+
++ Response 204 (application/json)
+
+# Group Metadata/Resource Types
+
+## GET /ofscMetadata/v1/resourceTypes
+
++ Request (application/json)
+
+    + Headers
+
+            Authorization: ``
+
++ Response 200 (application/json)
+
+    + Body
+
+            {
+            }
+
+# Group Metadata/Time Slots
+
+## GET /ofscMetadata/v1/timeSlots
+
++ Request (application/json)
+
+    + Headers
+
+            Authorization: ``
+
++ Response 200 (application/json)
+
+    + Body
+
+            {
+            }
+
+# Group Metadata/Work Skills
+
+## GET /ofscMetadata/v1/workSkills
+
++ Request (application/json)
+
+    + Headers
+
+            Authorization: ``
+
++ Response 200 (application/json)
+
+    + Body
+
+            {
+            }
+
+## /ofscMetadata/v1/workSkills/{label}
+
++ Parameters
+
+    + label
+
+### DELETE
+
++ Request (application/json)
+
+    + Headers
+
+            Authorization: ``
+
++ Response 204 (application/json)
+
+### GET
+
++ Request (application/json)
+
+    + Headers
+
+            Authorization: ``
+
++ Response 200 (application/json)
+
+    + Body
+
+            {
+            }
+
+### PUT
+
++ Request (application/json)
+
+    + Headers
+
+            Authorization: ``
+
++ Response 204 (application/json)
+
+# Group Metadata/Work Skills/Work Skill Conditions
+
+## /ofscMetadata/v1/workSkillConditions
+
+### GET
+
++ Request (application/json)
+
+    + Headers
+
+            Authorization: ``
+
++ Response 200 (application/json)
+
+    + Body
+
+            {
+            }
+
+### PUT
+
++ Request (application/json)
+
+    + Headers
+
+            Authorization: ``
+
++ Response 204 (application/json)
+
+# Group Metadata/Work Skills/Work Skill Groups
+
+## GET /ofscMetadata/v1/workSkillGroups
+
++ Request (application/json)
+
+    + Headers
+
+            Authorization: ``
+
++ Response 200 (application/json)
+
+    + Body
+
+            {
+            }
+
+## /ofscMetadata/v1/workSkillGroups/{label}
+
++ Parameters
+
+    + label
+
+### DELETE
+
++ Request (application/json)
+
+    + Headers
+
+            Authorization: ``
+
++ Response 204 (application/json)
+
+### PUT
+
++ Request (application/json)
+
+    + Headers
+
+            Authorization: ``
+
++ Response 204 (application/json)
+
+### GET
+
++ Request (application/json)
+
+    + Headers
+
+            Authorization: ``
+
++ Response 200 (application/json)
+
+    + Body
+
+            {
+            }
+
+# Group Metadata/Work Zone Key
+
+## GET /ofscMetadata/v1/workZoneKey
+
++ Request (application/json)
+
+    + Headers
+
+            Authorization: ``
+
++ Response 200 (application/json)
+
+    + Body
+
+            {
+            }
+
+# Group Metadata/Work Zones
+
+## /ofscMetadata/v1/workZones
+
+### GET
+
++ Request (application/json)
+
+    + Headers
+
+            Authorization: ``
+
++ Response 200 (application/json)
+
+    + Body
+
+            {
+            }
+
+### PATCH
+
++ Request (application/json)
+
+    + Headers
+
+            Authorization: ``
+
++ Response 200 (application/json)
+
+    + Body
+
+            {
+            }
+
+### POST
+
++ Request (application/json)
+
+    + Headers
+
+            Authorization: ``
+
+    + Body
+
+            {
+            }
+
++ Response 204 (application/json)
+
+### PUT
+
++ Request (application/json)
+
+    + Headers
+
+            Authorization: ``
+
++ Response 204 (application/json)
+
+## /ofscMetadata/v1/workZones/{label}
+
++ Parameters
+
+    + label
+
+### GET
+
++ Request (application/json)
+
+    + Headers
+
+            Authorization: ``
+
++ Response 200 (application/json)
+
+    + Body
+
+            {
+            }
+
+### PUT
+
++ Request (application/json)
+
+    + Headers
+
+            Authorization: ``
+
++ Response 204 (application/json)
+
+# Group Metadata/Work Zones/Work Zone Shapes
+
+## POST /ofscMetadata/v1/workZones/custom-actions/populateShapes
+
++ Request (application/json)
+
+    + Headers
+
+            Authorization: ``
+
+    + Body
+
+            {
+            }
+
++ Response 204 (application/json)
+
+## GET /ofscMetadata/v1/workZones/custom-actions/populateShapes/{downloadId}
+
++ Parameters
+
+    + downloadId
+
++ Request (application/json)
+
+    + Headers
+
+            Authorization: ``
+
++ Response 200 (application/json)
+
+    + Body
+
+            {
+            }
+
+# Group OAuth2/Token Service
+
+## POST /oauthTokenService/v1/token
+
++ Request (application/json)
+
+    + Headers
+
+            Authorization: ``
+
+    + Body
+
+            {
+            }
+
++ Response 204 (application/json)
+
+## POST /oauthTokenService/v2/token
+
++ Request (application/json)
+
+    + Headers
+
+            Authorization: ``
+
+    + Body
+
+            {
+            }
+
++ Response 204 (application/json)
+
+# Group Parts Catalog
+
+## PUT /ofscPartsCatalog/v1/catalogs/{catalog}/{language}
+
++ Parameters
+
+    + catalog
+
+    + language
+
++ Request (application/json)
+
+    + Headers
+
+            Authorization: ``
+
++ Response 204 (application/json)
+
+## /ofscPartsCatalog/v1/catalogs/{catalog}/{language}/{itemLabel}
+
++ Parameters
+
+    + catalog
+
+    + language
+
+    + itemLabel
+
+### DELETE
+
++ Request (application/json)
+
+    + Headers
+
+            Authorization: ``
+
++ Response 204 (application/json)
+
+### PUT
+
++ Request (application/json)
+
+    + Headers
+
+            Authorization: ``
+
++ Response 204 (application/json)
+
+# Group Statistics/Activity Duration
+
+## /ofscStatistics/v1/activityDurationStats
+
+### GET
+
++ Request (application/json)
+
+    + Headers
+
+            Authorization: ``
+
++ Response 200 (application/json)
+
+    + Body
+
+            {
+            }
+
+### PATCH
+
++ Request (application/json)
+
+    + Headers
+
+            Authorization: ``
+
++ Response 200 (application/json)
+
+    + Body
+
+            {
+            }
+
+# Group Statistics/Activity Travel
+
+## /ofscStatistics/v1/activityTravelStats
+
+### GET
+
++ Request (application/json)
+
+    + Headers
+
+            Authorization: ``
+
++ Response 200 (application/json)
+
+    + Body
+
+            {
+            }
+
+### PATCH
+
++ Request (application/json)
+
+    + Headers
+
+            Authorization: ``
+
++ Response 200 (application/json)
+
+    + Body
+
+            {
+            }
